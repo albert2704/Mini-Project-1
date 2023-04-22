@@ -1064,14 +1064,14 @@ header .social-icon {
 
 .section-6 .inner-subtitle {
     color: var(--desc-color);
-    font-weight: 500;
+    font-weight: bold;
     font-size: 20px;
     margin-top: 70px;
 }
 
 .section-6 .inner-title {
     font-size: 60px;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -1100,7 +1100,7 @@ header .social-icon {
 }
 
 .section-6 .inner-name {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 550;
     margin-top: 30px;
 }
@@ -1115,7 +1115,7 @@ header .social-icon {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 75px;
+    margin-top: 39px;
 }
 
 .section-6 .social-icon {
@@ -1126,11 +1126,11 @@ header .social-icon {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
 }
 
 .section-6 .social-icon i {
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .section-6 .social-icon:hover i {
@@ -1140,6 +1140,7 @@ header .social-icon {
 .section-6 .social-icon:hover {
     background-color: var(--button-color);
     color: white;
+    transition: .5s;
 }
 
 .section-6 .inner-picture {
@@ -1190,24 +1191,27 @@ header .social-icon {
 
 .section-6 .inner-picture .can-do .inner-introduce .bottom {
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
 }
 
 .section-6 .inner-picture .inner-button {
-    width: 140px;
-    height: 50px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--background-black);
     color: white;
     text-align: center;
-    padding: 14px;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    border-radius: 5px;
 }
 
 .section-6 .inner-picture .inner-button:hover {
     background-color: #000;
+    transition: .5s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1220,7 +1224,7 @@ header .social-icon {
     }
 
     .section-6 .icons {
-        margin-top: 25px;
+        margin-top: 27px;
     }
 
     .section-6 .social-icon {
@@ -1322,11 +1326,15 @@ header .social-icon {
     }
 
     .section-6 .inner-title {
-        font-size: 60px;
         max-width: 300px;
         text-align: center;
+        font-size: calc( 1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.1 * (1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20))));
     }
-
+    .section-6 .inner-subtitle {
+        font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
+    }
     .section-6 .can-do {
         text-align: center;
     }
@@ -1348,6 +1356,9 @@ header .social-icon {
     .section-6 .inner-button {
         margin: 15px auto 0 auto;
     }
+    .section-6 .inner-picture .can-do .inner-introduce .bottom {
+        margin-top: 7px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1359,7 +1370,7 @@ header .social-icon {
 
     .section-6 .inner-box {
         width: 100%;
-        margin: 20px 15px;
+        margin: 20px 0px;
     }
 
     .section-6 .icons {
@@ -1402,16 +1413,17 @@ header .social-icon {
 }
 
 .section-7 .inner-subtitle {
-    color: var(--desc-color);
-    font-size: 20px;
-    font-weight: 500;
+    color: #ADADAD;
+    font-size: 18px;
+    font-weight: bold;
     line-height: 2;
 }
 
 .section-7 .inner-title {
     color: white;
-    font-size: 55px;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
 }
 
 .section-7 .inner-comment {
@@ -1426,11 +1438,13 @@ header .social-icon {
     background-color: white;
     border-radius: 10px;
     padding: 40px 42px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .section-7 .inner-box .inner-content {
-    font-size: 27px;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.5;
     color: var(--desc-color);
 }
 
@@ -1438,6 +1452,7 @@ header .social-icon {
     font-size: 70px;
     color: var(--desc-color);
     margin-left: 200px;
+    margin-top: -25px;
 }
 
 .section-7 .inner-box .inner-image img {
@@ -1457,8 +1472,8 @@ header .social-icon {
 }
 
 .section-7 .name {
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .section-7 .job {
@@ -1507,24 +1522,27 @@ header .social-icon {
     }
     
     .section-7 .box3 {
-        margin: 50px auto;
+        margin: 30px auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     .section-7 .inner-box {
         width: 240px;
-        height: 450px;
         padding: 30px 15px;
     }
     .section-7 .inner-subtitle {
         text-align: center;
+        font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
     }
 
     .section-7 .inner-title {
         max-width: 300px;
-        margin: auto;
+        margin: 8px auto 30px auto;
         text-align: center;
+        font-size: calc( 1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.1 * (1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20))));
     }
 
     .section-7 .inner-box i {
@@ -1661,8 +1679,8 @@ header .social-icon {
     }
 
     .section-8 .inner-button {
-        top: 34%;
-        left: 35%;
+        top: 35%;
+        left: 40%;
         width: 100px;
         height: 100px;
         padding: 32px 32px 32px 35px;
@@ -1686,13 +1704,13 @@ header .social-icon {
 
 .section-9 .inner-subtitle {
     color: var(--desc-color);
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .section-9 .inner-title {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -1711,7 +1729,7 @@ header .social-icon {
     border-radius: 10px;
     border: none;
     padding: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .section-9 textarea {
@@ -1721,7 +1739,7 @@ header .social-icon {
     border: none;
     border-radius: 10px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .section-9 .submit-button {
@@ -1732,7 +1750,7 @@ header .social-icon {
     margin-top: 25px;
     background-color: var(--background-black);
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     position: absolute;
     bottom: -75px;
@@ -1742,6 +1760,7 @@ header .social-icon {
 .section-9 .submit-button:hover {
     background-color: var(--button-color);
     color: black;
+    transition: .5s;
 }
 
 @media screen and (max-width: 992px) {
@@ -1762,6 +1781,14 @@ header .social-icon {
 
     .section-9 .inner-subtitle, .section-9 .inner-title {
         text-align: center;
+    }
+    .section-9 .inner-subtitle {
+        font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .section-9 .inner-title {
+        font-size: calc( 1.7349999999999999rem + (3.1 - 1.7349999999999999) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.3 * (1.7349999999999999rem + (3.1 - 1.7349999999999999) * ((100vw - 20rem) / (48 - 20))));
     }
 
     .section-9 .submit-button {
